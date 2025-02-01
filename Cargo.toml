@@ -1,0 +1,18 @@
+[package]
+name = "data_record"
+license-file = "LICENSE"
+version = "0.0.0"
+authors = ["Benedikt Schneppe"]
+description = "A procedural macro that generates a trait from a struct, exporting the struct's fields as trait methods and providing a constructor method."
+keywords = ["record", "proc_macro", "procmacro","dataclass"]
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+proc-macro2 = "1.0"
+syn = "2.0"
+darling = "0.20.10"
+
